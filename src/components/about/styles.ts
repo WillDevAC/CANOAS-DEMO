@@ -44,7 +44,6 @@ export const Paragraph = styled.p`
 export const ButtonContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
 `;
 
 export const BtnRed = styled.a`
@@ -56,5 +55,5 @@ export const BtnRed = styled.a`
 
 export const BtnGreen = styled(BtnRed)`
   background-color: green;
-  margin-top: 10px;
+  margin-left: 10px;
 `;
