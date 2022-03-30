@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-export const About = styled.div`
-  background-color: #FFF;  
-  padding: 30px 100px;
-
-  @media screen and (max-width: 768px) {
-    padding: 30px 30px;
-  }
-`;
-
 export const Grid = styled.div`
   display: grid;
   min-height: 15.625rem;
@@ -17,6 +8,15 @@ export const Grid = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 100px;
+  }
+`;
+
+export const About = styled.div`
+  background-color: #FFF;  
+  padding: 30px 50px;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 30px;
   }
 `;
 
@@ -29,16 +29,16 @@ export const Image = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2.5rem;
-  color: black;
-  padding-bottom: 1rem;
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Paragraph = styled.p`
+  text-indent: 30px;
   color: black;
   text-align: justify;
+  padding-bottom: 1.2rem;
 `;
 
 export const ButtonContainer = styled.div`

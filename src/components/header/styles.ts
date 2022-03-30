@@ -1,6 +1,10 @@
 import { FaBars } from 'react-icons/fa';
 import styled from 'styled-components';
 
+export const Title = styled.h1`
+  color: white;
+`;
+
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
