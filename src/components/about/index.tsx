@@ -18,10 +18,10 @@ const about: React.FC = () => {
       <About>
         <Grid>
           <Image>
-            <Title>IMAGEM</Title>
+            <img src="images/cover.webp" alt="" />
           </Image>
           <Text>
-            <Title>Sobre o Algodão Doce</Title>
+            <Title color="primary">Sobre o Algodão Doce</Title>
             <Paragraph>
               Nossa escola possui uma equipe especializada e com constante treinamento com foco
               no desenvolvimento infantil. Atendemos turmas reduzidas, o que permite um olhar muito

@@ -7,9 +7,10 @@ export const Title = styled.h1`
 
 export const Nav = styled.nav`
   background: white;
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem calc((100vw - 1500px) / 2);
   z-index: 10;
 `;
@@ -22,14 +23,23 @@ export const NavLink = styled.a`
   padding: 0 2rem;
   height: 100%;
   cursor: pointer;
+
+  img {
+    height: 64px;
+  }
+
+  
   &:hover {
-    color: #256ce1;
+    background-color: #DE80B0;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    border-radius: 30px;
   }
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #fff;
+  color: black;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -61,7 +71,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled.a`
   border-radius: 4px;
-  background: #256ce1;
+  background: #DE80B0;
   padding: 10px 22px;
   color: #fff;
   outline: none;
@@ -70,9 +80,10 @@ export const NavBtnLink = styled.a`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   margin-left: 24px;
+
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: black;
+    background: #46A4DA;
     color: white;
   }
 `;

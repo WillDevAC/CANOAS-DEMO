@@ -13,23 +13,23 @@ const Navbar = () => {
     <>
       <Nav>
         <NavLink href='/'>
-          <p>LOGO</p>
+          <img src="images/logo.webp" alt="Logo algodão doce canoas" />
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink href='/about' activeStyle>
+          <NavLink activeStyle>
             Home
           </NavLink>
-          <NavLink href='/services' activeStyle>
+          <NavLink activeStyle>
             Para o seu filho
           </NavLink>
-          <NavLink href='/contact-us' activeStyle>
+          <NavLink activeStyle>
             Sobre nós
           </NavLink>
-          <NavLink href='/sign-up' activeStyle>
+          <NavLink activeStyle>
             Turmas
           </NavLink>
-          <NavLink href='/sign-up' activeStyle>
+          <NavLink activeStyle>
             Contatos
           </NavLink>
         </NavMenu>
