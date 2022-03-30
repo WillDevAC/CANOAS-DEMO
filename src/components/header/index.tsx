@@ -8,14 +8,14 @@ import {
   NavBtnLink
 } from './styles';
 
-const Navbar = ( { toggle } ) => {
+const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLink href='/'>
           <p>LOGO</p>
         </NavLink>
-        <Bars onCLick={toggle} />
+        <Bars />
         <NavMenu>
           <NavLink href='/about' activeStyle>
             About
