@@ -28,12 +28,15 @@ export const NavLink = styled.a`
     height: 64px;
   }
 
-  
   &:hover {
     background-color: #DE80B0;
     color: white;
     transition: all 0.2s ease-in-out;
     border-radius: 30px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 0 1rem;
   }
 `;
 
