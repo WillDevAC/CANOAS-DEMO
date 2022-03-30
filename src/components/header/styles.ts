@@ -40,7 +40,7 @@ export const NavLink = styled.a`
 export const Bars = styled(FaBars)`
   display: none;
   color: black;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
     top: 0;
@@ -55,7 +55,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: -24px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;
@@ -64,7 +64,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 24px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;

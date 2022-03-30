@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const Grid = styled.div`
   padding-top: 3%;
   display: grid;
-
-  height: 26rem;
+  min-height: 10rem;
 
   grid-template-columns: 4fr 5fr;
   @media screen and (max-width: 768px) {
@@ -51,6 +50,10 @@ export const Paragraph = styled.p`
   width: 80%;
   font-size: 1.1rem;
   padding-top: 2%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const ButtonContainer = styled.div`

@@ -10,4 +10,8 @@ export const Title = styled.h1<Props>`
   color: black;
   padding-bottom: 1rem;
   color: ${props => props.color /*Propriedade*/ == 'primary' ? 'black' : 'white'}; //Condição pro input da prop
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
