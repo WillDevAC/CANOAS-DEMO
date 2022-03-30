@@ -2,12 +2,24 @@ import React from 'react';
 
 import { Title } from '../../templates/home/styles';
 
-import { Container } from './styles';
+import { Container, ImgGallery, ImgGrid } from './styles';
 
 const ImageSection: React.FC = () => {
   return (
     <Container>
-      <Title color="primary">CONHEÇA A NOSSA ESCOLA</Title>
+      <Title color="white">CONHEÇA NOSSA ESCOLA</Title>
+      <ImgGallery>
+        <ImgGrid>
+          <img src="images/1200.jpg" alt="place kitten" />
+          <img src="images/1200.jpg" alt="place kitten" />
+          <img src="images/1200.jpg" alt="place kitten" />
+          <img src="images/1200.jpg" alt="place kitten" />
+          <img src="images/1200.jpg" alt="place kitten" />
+          <img src="images/1200.jpg" alt="place kitten" />
+          <img src="images/1200.jpg" alt="place kitten" />
+          <img src="images/1200.jpg" alt="place kitten" />
+        </ImgGrid>
+      </ImgGallery>
     </Container>
   );
 }
