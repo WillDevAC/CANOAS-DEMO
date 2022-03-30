@@ -23,9 +23,10 @@ export const Grid = styled.div`
 export const Image = styled.div`
   display: flex;
   justify-content: flex-start;
-`;
 
-export const Description = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.h1`
@@ -37,8 +38,7 @@ export const Title = styled.h1`
 
 export const Paragraph = styled.p`
   color: black;
-  font-size: 1.2rem;
-  padding-bottom: 1rem;
+  text-align: justify;
 `;
 
 export const ButtonContainer = styled.div`
