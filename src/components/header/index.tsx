@@ -18,19 +18,20 @@ const Navbar = () => {
         <Bars />
         <NavMenu>
           <NavLink href='/about' activeStyle>
-            About
+            Home
           </NavLink>
           <NavLink href='/services' activeStyle>
-            Services
+            Para o seu filho
           </NavLink>
           <NavLink href='/contact-us' activeStyle>
-            Contact Us
+            Sobre nós
           </NavLink>
           <NavLink href='/sign-up' activeStyle>
-            Sign Up
+            Turmas
           </NavLink>
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+          <NavLink href='/sign-up' activeStyle>
+            Contatos
+          </NavLink>
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/signin'>Agende sua visita</NavBtnLink>

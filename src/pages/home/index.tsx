@@ -17,8 +17,6 @@ const home: React.FC = () => {
     <>
       <LayoutFragment>
 
-        <About/>
-        <ImageSection/>
 
       </LayoutFragment>
     </>
