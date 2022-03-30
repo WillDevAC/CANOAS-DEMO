@@ -7,8 +7,8 @@ import {
    Image,
    Paragraph,
    ButtonContainer,
-   BtnRed,
-   BtnGreen
+   BtnPink,
+   BtnBlue
   } from './styles';
 
   import { Title } from '../../templates/home/styles';
@@ -31,8 +31,8 @@ const about: React.FC = () => {
               físico e do próprio corpo, pensamento, ética e estética.
             </Paragraph>
             <ButtonContainer>
-              <BtnRed>Agende sua visita</BtnRed>
-              <BtnGreen>Nossa história</BtnGreen>
+              <BtnPink>Agende sua visita</BtnPink>
+              <BtnBlue>Nossa história</BtnBlue>
             </ButtonContainer>
           </Text>
         </Grid>

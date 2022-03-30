@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const Grid = styled.div`
-  padding-top: 3%;
   display: grid;
   min-height: 10rem;
 
   grid-template-columns: 4fr 5fr;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 850px) {
     grid-template-columns: 1fr;
     gap: 100px;
   }
@@ -15,25 +14,26 @@ export const Grid = styled.div`
 export const About = styled.div`
   background-color: #FFF;  
   padding: 30px 50px;
-  @media screen and (max-width: 768px) {
-    padding: 30px 30px;
+  @media screen and (max-width: 850px) {
+    padding: 30px;
   }
 `;
 
 export const Image = styled.div`
   display: flex;
-  justify-content: flex-start;
-
-  justify-content: center;
   align-items: center;
-
-  height: 18%;
-
+  justify-content: center;
+  
   img{
-    height: 100%;
+    width: 50%
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1280px) {
+    justify-content: flex-start;
+    width: 150%;
+  }
+
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -41,6 +41,7 @@ export const Image = styled.div`
 export const Text = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
 export const Paragraph = styled.p`
@@ -51,7 +52,7 @@ export const Paragraph = styled.p`
   font-size: 1.1rem;
   padding-top: 2%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 850px) {
     width: 100%;
   }
 `;
@@ -60,32 +61,39 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: flex-start;
   padding-top: 2%;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 `;
 
-export const BtnRed = styled.a`
+export const BtnPink = styled.a`
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: red;
+  background-color: #de80b0;
   cursor: pointer;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #46A4DA;
-    color: white;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.03);
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 10px 10px;
   }
 
 `;
 
-export const BtnGreen = styled(BtnRed)`
-  background-color: green;
+export const BtnBlue = styled(BtnPink)`
+  background-color: #44a3d9;
   margin-left: 10px;
   cursor: pointer;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #46A4DA;
-    color: white;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.03);
   }
 
 `;

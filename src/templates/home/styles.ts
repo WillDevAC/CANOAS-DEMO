@@ -5,11 +5,11 @@ interface Props { //Definição da prop
 }
 
 export const Title = styled.h1<Props>`
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Lobster Two', cursive;
   font-size: 2.5rem;
   color: black;
   padding-bottom: 1rem;
-  color: ${props => props.color /*Propriedade*/ == 'primary' ? 'black' : 'white'}; //Condição pro input da prop
+  color: ${props => props.color /*Propriedade*/ == 'primary' ? '#DE80B0' : 'white'}; //Condição pro input da prop
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;

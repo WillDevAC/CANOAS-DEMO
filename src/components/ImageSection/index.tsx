@@ -7,7 +7,6 @@ import { Container, ImgGallery, ImgGrid } from './styles';
 const ImageSection: React.FC = () => {
   return (
     <Container>
-      <Title color="white">CONHEÇA NOSSA ESCOLA</Title>
       <ImgGallery>
         <ImgGrid>
           <img src="images/1200.jpg" alt="place kitten" />
