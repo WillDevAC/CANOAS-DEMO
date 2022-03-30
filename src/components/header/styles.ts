@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 
 export const NavLink = styled.a`
   color: black;
-  display: flex;
+  display: block;
   align-items: center;
   text-decoration: none;
   padding: 0 2rem;
@@ -29,10 +29,9 @@ export const NavLink = styled.a`
   }
 
   &:hover {
-    background-color: #DE80B0;
-    color: white;
-    transition: all 0.2s ease-in-out;
-    border-radius: 30px;
+    color: #DE80B0;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
   }
 
   @media screen and (max-width: 1150px) {
@@ -40,7 +39,7 @@ export const NavLink = styled.a`
   }
 `;
 
-export const Bars = styled(FaBars)`
+export const Hamburger = styled(FaBars)`
   display: none;
   color: black;
   @media screen and (max-width: 960px) {

@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Nav,
   NavLink,
-  Bars,
+  Hamburger,
   NavMenu,
   NavBtn,
   NavBtnLink
@@ -15,7 +15,7 @@ const Navbar = () => {
         <NavLink href='/'>
           <img src="images/logo.webp" alt="Logo algodão doce canoas" />
         </NavLink>
-        <Bars />
+        <Hamburger />
         <NavMenu>
           <NavLink activeStyle>
             Home

@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 
 export const SliderItem = styled.div` 
-  border-top: 3px solid #DE80B0;
   text-align: center;
   display: flex;
   justify-content: center;
+  outline: none;
 
   img {
     width: 100%;
