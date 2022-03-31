@@ -6,3 +6,4 @@ export const settings = {
     slidesToScroll: 1,
     adaptiveHeight: true
   };
+

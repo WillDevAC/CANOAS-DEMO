@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-
-import ImageSection from "../../components/ImageSection";
-
 import Slider from '../../components/slider'
 import About from '../../components/about'
 import SectionImage from '../../components/ImageSection'
@@ -18,11 +15,9 @@ const home: React.FC = () => {
   return (
     <>
       <LayoutFragment>
-
         <Slider/>
         <About/>
         <SectionImage/>
-
       </LayoutFragment>
     </>
   );
