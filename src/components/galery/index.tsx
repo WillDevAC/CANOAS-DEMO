@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Slider from "react-slick";
 
@@ -11,19 +11,28 @@ const Galery: React.FC = () => {
     <Container>
       <Slider {...settings}>
         <SectionImg>
-          <img src="https://dummyimage.com/400x300/d9d9d9/fff" alt="" />
+          <img src="images/galery1.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="https://dummyimage.com/400x300/d9d9d9/fff" alt="" />
+          <img src="images/galery2.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="https://dummyimage.com/400x300/d9d9d9/fff" alt="" />
+          <img src="images/galery3.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="https://dummyimage.com/400x300/d9d9d9/fff" alt="" />
+          <img src="images/galery4.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="https://dummyimage.com/400x300/d9d9d9/fff" alt="" />
+          <img src="images/galery5.png" alt="Imagem escola algodão doce" />
+        </SectionImg>
+        <SectionImg>
+          <img src="images/galery6.png" alt="Imagem escola algodão doce" />
+        </SectionImg>
+        <SectionImg>
+          <img src="images/galery7.png" alt="Imagem escola algodão doce" />
+        </SectionImg>
+        <SectionImg>
+          <img src="images/galery8.png" alt="Imagem escola algodão doce" />
         </SectionImg>
       </Slider>
     </Container>
