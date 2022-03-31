@@ -22,7 +22,7 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background-color: white;
+    background-color: #D7D7D7;
     
   }
 

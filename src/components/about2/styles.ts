@@ -40,10 +40,8 @@ export const Image = styled.div`
 export const Paragraph = styled.p`
   color: black;
   text-align: justify;
-  padding-bottom: 2%;
   width: 80%;
   font-size: 1rem;
-  padding-top: 2%;
 
   @media screen and (max-width: 1280px) {
     width: 100%;
