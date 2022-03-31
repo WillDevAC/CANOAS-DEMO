@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding: 80px 0;
+  padding: 40px 0;
   margin: 0 40px;
 
   @media screen and (max-width: 1280px) {
@@ -15,7 +15,9 @@ export const Container = styled.div`
 
 export const FlexContainer = styled.div`
   display: flex;
+  max-width: 50%;
   @media screen and (max-width: 1280px) {
+    max-width: 100%;
     margin: 20px 40px;
     img {
       display: none;

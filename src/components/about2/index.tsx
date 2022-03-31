@@ -80,8 +80,6 @@ const about2: React.FC = () => {
             </Paragraph>
           </About>
         </FlexContainer>
-        <FlexContainer>
-        </FlexContainer>
       </Container>
     </>
   );

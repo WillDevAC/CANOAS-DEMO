@@ -48,10 +48,6 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: flex-start;
   padding-top: 2%;
-
-  @media screen and (max-width: 480px) {
-    justify-content: center;
-  }
 `;
 
 export const BtnPink = styled.a`
