@@ -13,6 +13,7 @@ export const Baby = styled.div`
   flex-direction: column;
   max-height: 65%;
   align-items: center;
+  max-width: 50%;
 
   img {
     border: 10px solid white;
@@ -29,6 +30,7 @@ export const TurmaContainer = styled.div`
   gap: 20px;
   align-items: center;
   flex-direction: column;
+  max-width: 50%;
 `;
 
 export const Title = styled.h1`
