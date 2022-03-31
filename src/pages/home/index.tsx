@@ -4,13 +4,13 @@ import Slider from '../../components/slider'
 
 import About from '../../components/about'
 
-import Turmas from "../../components/turmas";
+import Classes from "../../components/classes";
 
-import About2 from "../../components/about2";
+import Informations from "../../components/informations";
 
-import SectionImage from '../../components/ImageSection'
+import Galary from '../../components/galery'
 
-import SectionTurm from '../../components/TurmSection'
+import After_Hours from '../../components/after-hours'
 
 import LayoutFragment from "../../components/layout";
 
@@ -26,10 +26,10 @@ const home: React.FC = () => {
       <LayoutFragment>
         <Slider/>
         <About/>
-        <SectionImage/>
-	      <About2/>
-        <Turmas/>
-        <SectionTurm/>
+        <Galary/>
+	      <Informations/>
+        <Classes/>
+        <After_Hours/>
       </LayoutFragment>
     </>
   );
