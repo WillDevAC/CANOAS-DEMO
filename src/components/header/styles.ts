@@ -36,7 +36,7 @@ export const NavLink = styled.a`
     transition: all 0.1s ease-in-out;
   }
 
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: 1180px) {
     padding: 0 1rem;
   }
 `;
@@ -48,7 +48,7 @@ export const Calendar = styled(BsFillCalendar2CheckFill)`
 export const Hamburger = styled(FaBars)`
   display: none;
   color: black;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 985px) {
     display: block;
     position: absolute;
     top: 0;
@@ -63,7 +63,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: -24px;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 985px) {
     display: none;
   }
 `;
@@ -72,7 +72,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 24px;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 985px) {
     display: none;
   }
 `;

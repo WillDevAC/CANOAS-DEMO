@@ -23,8 +23,8 @@ const home: React.FC = () => {
         <Slider/>
         <About/>
         <SectionImage/>
-        <SectionTurm/>
 	      <About2/>
+        <SectionTurm/>
       </LayoutFragment>
     </>
   );
