@@ -16,4 +16,18 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-family: 'ABeeZee', sans-serif;
   }
+
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: white;
+    
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#44A3D9, #DE80B0) ;
+  }
+
 `

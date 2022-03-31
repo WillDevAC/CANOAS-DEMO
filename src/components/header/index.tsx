@@ -1,8 +1,10 @@
 import React from 'react';
+
 import {
   Nav,
   NavLink,
   Hamburger,
+  Calendar,
   NavMenu,
   NavBtn,
   NavBtnLink
@@ -15,7 +17,7 @@ const Navbar = () => {
         <NavLink href='/'>
           <img src="images/logo.webp" alt="Logo algodão doce canoas" />
         </NavLink>
-        <Hamburger />
+        <Hamburger/>
         <NavMenu>
           <NavLink activeStyle>
             Home
@@ -34,7 +36,9 @@ const Navbar = () => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Agende sua visita</NavBtnLink>
+          <NavBtnLink to='/signin'>
+          <Calendar/> Agende sua visita
+          </NavBtnLink>
         </NavBtn>
       </Nav>
     </>

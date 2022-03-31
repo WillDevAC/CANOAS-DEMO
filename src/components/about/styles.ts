@@ -44,19 +44,6 @@ export const Text = styled.div`
   justify-content: center;
 `;
 
-export const Paragraph = styled.p`
-  color: black;
-  text-align: justify;
-  padding-bottom: 2%;
-  width: 80%;
-  font-size: 1.1rem;
-  padding-top: 2%;
-
-  @media screen and (max-width: 850px) {
-    width: 100%;
-  }
-`;
-
 export const ButtonContainer = styled.div`
   display: flex;
   align-items: flex-start;

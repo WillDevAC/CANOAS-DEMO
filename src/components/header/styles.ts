@@ -1,6 +1,8 @@
 import { FaBars } from 'react-icons/fa';
 import styled from 'styled-components';
 
+import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+
 export const Title = styled.h1`
   color: white;
 `;
@@ -39,6 +41,10 @@ export const NavLink = styled.a`
   }
 `;
 
+export const Calendar = styled(BsFillCalendar2CheckFill)`
+  margin-right: 10px;
+`;
+
 export const Hamburger = styled(FaBars)`
   display: none;
   color: black;
@@ -72,6 +78,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled.a`
+  display: flex;
   border-radius: 4px;
   background: #DE80B0;
   padding: 10px 22px;
@@ -84,8 +91,6 @@ export const NavBtnLink = styled.a`
   margin-left: 24px;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #46A4DA;
-    color: white;
+    transform: scale(1.03);
   }
 `;

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Slider from '../../components/slider'
 import About from '../../components/about'
 
+import About2 from "../../components/about2";
+
 import SectionImage from '../../components/ImageSection'
 import SectionTurm from '../../components/TurmSection'
 
@@ -22,6 +24,7 @@ const home: React.FC = () => {
         <About/>
         <SectionImage/>
         <SectionTurm/>
+	      <About2/>
       </LayoutFragment>
     </>
   );

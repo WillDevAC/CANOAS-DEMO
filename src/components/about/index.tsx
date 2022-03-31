@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { Paragraph } from '../../templates/home/styles';
+
 import {
    Grid,
    Text,
    About,
    Image,
-   Paragraph,
    ButtonContainer,
    BtnPink,
    BtnBlue
