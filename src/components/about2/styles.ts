@@ -5,11 +5,22 @@ export const Container = styled.div`
   justify-content: center;
   padding: 80px 0;
   margin: 0 40px;
+
+  @media screen and (max-width: 1280px) {
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin: 0;
+  }
 `;
 
 export const FlexContainer = styled.div`
   display: flex;
-  gap: 10px;
+  @media screen and (max-width: 1280px) {
+    margin: 20px 40px;
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const Image = styled.div`
