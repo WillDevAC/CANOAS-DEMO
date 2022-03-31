@@ -7,14 +7,15 @@ import {
    FlexContainer,
    Image,
    About,
-   Paragraph
+   Paragraph,
+   Padding
    } 
   from './styles';
 
 
 const about2: React.FC = () => {
   return (
-    <>
+    <Padding>
       <Container>
         <FlexContainer>
           <Image>
@@ -80,7 +81,7 @@ const about2: React.FC = () => {
           </About>
         </FlexContainer>
       </Container>
-    </>
+    </Padding>
   );
 }
 

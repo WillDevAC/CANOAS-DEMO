@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
+export const Padding = styled.div`
+  padding: 40px 0;
+`;
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding: 40px 0;
-  margin: 0 40px;
+  padding: 60px 70px;
 
   @media screen and (max-width: 1280px) {
     flex-wrap: wrap;
@@ -16,9 +19,11 @@ export const Container = styled.div`
 export const FlexContainer = styled.div`
   display: flex;
   max-width: 50%;
+
   @media screen and (max-width: 1280px) {
     max-width: 100%;
     margin: 20px 40px;
+    
     img {
       display: none;
     }
@@ -37,6 +42,13 @@ export const Image = styled.div`
   }
 `;
 
+export const About = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
 export const Paragraph = styled.p`
   color: black;
   text-align: justify;
@@ -46,8 +58,4 @@ export const Paragraph = styled.p`
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-`;
-
-export const About = styled.div`
-  text-align: left;
 `;

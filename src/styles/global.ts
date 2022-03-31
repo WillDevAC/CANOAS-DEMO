@@ -22,11 +22,11 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background-color: #D7D7D7;
-    
+    background-color: #F4F4F4;
   }
 
   ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
     background-image: linear-gradient(#44A3D9, #DE80B0) ;
   }
 

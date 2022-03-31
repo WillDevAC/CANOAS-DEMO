@@ -13,6 +13,7 @@ export const SectionImg = styled.div `
   outline: none;
 
   img {
+    border-radius: 10px;
     margin: auto;
   }
 `;
