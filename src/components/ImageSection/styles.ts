@@ -2,17 +2,17 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: #44a3d9;
+  height: 370px;
+  padding-top: 2%;
 `;
 
-export const ImgContainer = styled.div`
-  display: flex;
-  justify-content: center;
+export const SectionImg = styled.div `
+
   text-align: center;
 
+  outline: none;
+
   img {
-    width: auto;
-    height: 100%;
-    object-fit: fill;
-    text-align: center;
+    margin: auto;
   }
 `;
