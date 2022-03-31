@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { Paragraph } from '../../templates/home/styles';
-
 import {
    Grid,
    Text,
+   Paragraph,
    About,
    Image,
    ButtonContainer,

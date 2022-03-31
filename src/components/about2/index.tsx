@@ -2,13 +2,12 @@ import React from 'react';
 
 import { Title } from '../../templates/home/styles';
 
-import { Paragraph } from '../../templates/home/styles';
-
 import {
    Container,
    FlexContainer,
    Image,
-   About
+   About,
+   Paragraph
    } 
   from './styles';
 
