@@ -12,9 +12,10 @@ import {
   } from './styles';
 
   import { Title } from '../../templates/home/styles';
-const about: React.FC = () => {
+const about = () => {
   return (
     <>
+    <section id='about' className='about'>
       <About>
         <Grid>
           <Image>
@@ -37,6 +38,7 @@ const about: React.FC = () => {
           </Text>
         </Grid>
       </About>
+    </section>
     </>
   );
 }

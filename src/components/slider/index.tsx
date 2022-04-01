@@ -8,7 +8,7 @@ import { settings } from "../../utils/sliderconfig";
 
 const slider: React.FC = () => {
   return (
-    <div>
+    <div id="home" className="home">
       <Slider {...settings}>
         <SliderItem>
           <img src="images/slider1.png" alt="" />

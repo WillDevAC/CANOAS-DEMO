@@ -1,6 +1,8 @@
 import { FaBars } from 'react-icons/fa';
 import styled from 'styled-components';
 
+import { Link as LinkS } from 'react-scroll'
+
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
 
 export const Title = styled.h1`
@@ -28,7 +30,7 @@ export const NavLogo = styled.div`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(LinkS)`
   color: black;
   display: block;
   align-items: center;
@@ -42,6 +44,12 @@ export const NavLink = styled.a`
   }
 
   &:hover {
+    color: #DE80B0;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:active {
     color: #DE80B0;
     transform: scale(1.1);
     transition: all 0.1s ease-in-out;

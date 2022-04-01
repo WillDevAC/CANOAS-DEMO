@@ -12,6 +12,7 @@ import {
 
 const Classes: React.FC = () => {
   return (
+  <section id='classes' className='classes'>
     <Container>
       <Baby>
         <img src="images/baby.png" alt="" />
@@ -40,6 +41,7 @@ const Classes: React.FC = () => {
         </TurmaSection>
       </TurmaContainer> 
     </Container>
+  </section>
   );
 }
 

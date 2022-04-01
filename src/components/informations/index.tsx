@@ -15,6 +15,7 @@ import {
 
 const about2: React.FC = () => {
   return (
+  <section id='informations'>
     <Padding>
       <Container>
         <FlexContainer>
@@ -82,6 +83,7 @@ const about2: React.FC = () => {
         </FlexContainer>
       </Container>
     </Padding>
+  </section>
   );
 }
 
