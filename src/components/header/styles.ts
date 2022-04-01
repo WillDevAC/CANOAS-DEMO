@@ -8,6 +8,9 @@ export const Title = styled.h1`
 `;
 
 export const Nav = styled.nav`
+  top: 0;
+  position: sticky;
+  border-bottom: 3px solid #DE80B0;
   background: white;
   height: 90px;
   display: flex;
@@ -15,6 +18,14 @@ export const Nav = styled.nav`
   align-items: center;
   padding: 0.5rem calc((100vw - 1500px) / 2);
   z-index: 10;
+`;
+
+export const NavLogo = styled.div`
+  display: block;
+
+  img {
+    height: 70px;
+  }
 `;
 
 export const NavLink = styled.a`

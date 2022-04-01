@@ -7,16 +7,17 @@ import {
   Calendar,
   NavMenu,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
+  NavLogo
 } from './styles';
 
 const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink href='/'>
+        <NavLogo href='/'>
           <img src="images/logo.webp" alt="Logo algodão doce canoas" />
-        </NavLink>
+        </NavLogo>
         <Hamburger/>
         <NavMenu>
           <NavLink activeStyle>
