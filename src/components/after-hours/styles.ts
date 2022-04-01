@@ -7,22 +7,18 @@ interface Props {
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  height: 450px;
+  min-height: 450px;
   background-color: white;
-
   align-items: center;
   justify-content: space-around;
 `;
 
-
 export const Content = styled.div<Props>`
-
   display: flex;
-  background-color: red;
-
+  flex-direction: column;
+  margin: 40px 0;
   height: 80%;
   width: 45%;
-
   justify-content: ${props => props.bg_align == 'center' ? 'center' : 'flex-start'};;
   align-items: ${props => props.bg_align == 'center' ? 'center' : 'flex-start'};;;
 

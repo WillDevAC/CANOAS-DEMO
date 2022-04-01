@@ -3,13 +3,13 @@ import styled from 'styled-components';
 interface Props { //Definição da prop
   color : string;
   align_self: string; //tem que ser com underline
+  padding_left: string;
 }
 
-
 export const Title = styled.h1<Props>`
-  width: 100%;
-  padding-left: 9%;
   display: flex;
+  width: 100%;
+  padding-left: ${props => props.padding_left == 'default' ? '9%' : '0'};
   font-family: 'Lobster Two', cursive;
   font-size: 2.5rem;
   color: black;

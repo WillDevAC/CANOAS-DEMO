@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import {
   Nav,
   NavLink,
@@ -14,7 +15,7 @@ import {
 const Navbar = () => {
   return (
     <>
-      <Nav>
+      <Nav id="header">
         <NavLogo href='/'>
           <img src="images/logo.webp" alt="Logo algodão doce canoas" />
         </NavLogo>

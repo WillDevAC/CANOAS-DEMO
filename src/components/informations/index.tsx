@@ -22,7 +22,7 @@ const about2: React.FC = () => {
             <img src="images/sobre.webp" alt="" />
           </Image>
           <About>
-            <Title color="primary" align_self="flex-start">Sobre</Title>
+            <Title color="primary" padding_left="default">Sobre</Title>
             <Paragraph>
               Nossa escola possui uma equipe especializada e com constante
               treinamento com foco no desenvolvimento infantil. Atendemos turmas
@@ -40,7 +40,7 @@ const about2: React.FC = () => {
             <img src="images/infraestrutura.webp" alt="" />
           </Image>
           <About>
-            <Title color="primary">Infraestrutura</Title>
+            <Title color="primary" padding_left="default">Infraestrutura</Title>
             <Paragraph>
               Buscamos sempre trazer o melhor conforto para o seu filho, aqui na 
               algodão doce canoas temos a melhor infraestrurura para você deixar seu
@@ -59,7 +59,7 @@ const about2: React.FC = () => {
             <img src="images/equipe.webp" alt="" />
           </Image>
           <About>
-            <Title color="primary">Equipe multidisciplinar</Title>
+            <Title color="primary" padding_left="default">Equipe multidisciplinar</Title>
             <Paragraph>
               Todos os nossos profissionais são qualificados, nossa equipe multidisciplinar
               é formada por Pedagoga, Psicopedagoga, Professores, Auxiliares, Psicóloga, Nutricionista,
@@ -72,7 +72,7 @@ const about2: React.FC = () => {
             <img src="images/seguranca.webp" alt="" />
           </Image>
           <About>
-            <Title color="primary">Segurança</Title>
+            <Title color="primary" padding_left="default">Segurança</Title>
             <Paragraph>
               Para garantir a total segurança do seu filho, temos um sistema de monitoramento presencial
               e câmeras de segurança, trazendo maior segurança e agilidade. Seu filho conosco está totalmente
