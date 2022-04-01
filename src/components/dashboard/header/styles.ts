@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { MdMenuBook } from 'react-icons/md';
 
-import { GrGallery } from 'react-icons/gr';
+import { BsImages } from 'react-icons/bs';
 
 import { RiPencilRuler2Fill } from 'react-icons/ri';
 
@@ -35,7 +35,7 @@ export const Aside = styled.div`
   height: 100%;
   align-items: center;
   background-color: #44a3d9;
-  width: 10%;
+  width: 13%;
   height: 100vh;
 
   @media screen and (max-width: 985px) {
@@ -56,6 +56,13 @@ export const Aside = styled.div`
   p {
     display: flex;
     font-size: 1rem;
+
+    &:hover {
+      transition: 0.1s;
+      font-size: 1.2rem;
+      background-color: #4fb4ed;
+      cursor: pointer;
+    }
   }
 `;
 
@@ -71,7 +78,7 @@ export const RulerPencil = styled(RiPencilRuler2Fill)`
   margin-right: 10px;
 `;
 
-export const Gallery = styled(GrGallery)`
+export const Gallery = styled(BsImages)`
   margin-right: 10px;
 `;
 
