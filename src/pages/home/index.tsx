@@ -12,7 +12,10 @@ import Galary from '../../components/galery'
 
 import After_Hours from '../../components/after-hours'
 
+import Ativities from '../../components/ativities'
+
 import LayoutFragment from "../../components/layout";
+
 
 const home: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +33,7 @@ const home: React.FC = () => {
 	      <Informations/>
         <Classes/>
         <After_Hours/>
+        <Ativities/>
       </LayoutFragment>
     </>
   );
