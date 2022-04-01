@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+
 import { 
   SidebarContainer, 
   Icon, 
@@ -8,7 +10,9 @@ import {
   SidebarMenu, 
   SidebarLink, 
   SideBtnWrap, 
-  SidebarRoute 
+  SidebarRoute,
+  Logo,
+  Calendar
 } from './styles';
 
 const sidebar = ( { isOpen, toggle } ) => {
@@ -19,13 +23,18 @@ const sidebar = ( { isOpen, toggle } ) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink>Link1</SidebarLink>
-          <SidebarLink>Link2</SidebarLink>
-          <SidebarLink>Link3</SidebarLink>
-          <SidebarLink>Link4</SidebarLink>
+          <Logo>
+            <img src="images/logo.webp" alt="" />
+          </Logo>
+          <SidebarLink>Página principal</SidebarLink>
+          <SidebarLink>Para o seu filho</SidebarLink>
+          <SidebarLink>Sobre nós</SidebarLink>
+          <SidebarLink>Turmas</SidebarLink>
+          <SidebarLink>Contatos</SidebarLink>
+          <SidebarLink>Área dos pais</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute>Botão</SidebarRoute>
+          <SidebarRoute><Calendar/>Agendar visita</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>      

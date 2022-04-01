@@ -3,22 +3,18 @@ import styled from 'styled-components';
 
 export const Icons = styled.div`
   display: block;
+
+  @media screen and (max-width: 650px) {
+    padding-top: 4%;
+  }
 `;
 
 export const Logo = styled.div`
-display: block;
-`;
+  display: block;
 
-export const Whatsapp = styled(FaWhatsapp)`
-
-`;
-
-export const Facebook = styled(FaInstagram)`
-
-`;
-
-export const Instagram = styled(FaFacebookF)`
-
+  @media screen and (max-width: 650px) {
+    order: 2;
+  }
 `;
 
 export const Container = styled.div`

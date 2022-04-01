@@ -42,10 +42,6 @@ export const Title = styled.h1`
   @media screen and (max-width: 645px) {
     font-size: 1.5rem;
   }
-
-  @media screen and (max-width: 480px) {
-    font-size: 0.9rem;
-  }
 `;
 
 export const TurmaSection = styled.div`

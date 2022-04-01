@@ -10,12 +10,13 @@ export const SliderItem = styled.div`
   img {
     width: 100%;
     height: 100%;
+    min-height: 250px;
     object-fit: fill;
     text-align: center;
   }
 
   @media(max-width: 800px) {
-   height: auto;
+   min-height: 250px;
   }
 
 `;

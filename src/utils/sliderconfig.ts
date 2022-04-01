@@ -4,6 +4,7 @@ export const settings = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    width: 600
   };
 

@@ -8,17 +8,21 @@ export const Container = styled.div`
   min-height: 400px;
   width: 100%;
   flex-direction: column;
-  padding-bottom: 1%;
+  padding: 2% 0;
 
   h1 {
-    margin-top: 3rem;
     margin-bottom: 2rem;
 
     @media screen and (max-width: 1000px) {
-      margin-top: 1rem;
+      margin: 1rem 0;
       font-size: 1.5rem;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 5% 0;
+  }
+
 `;
 
 export const Box = styled.div `

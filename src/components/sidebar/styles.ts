@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 import { FaTimes } from 'react-icons/fa';
 
+import { BsFillCalendar2CheckFill } from 'react-icons/bs'
+
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background-color: #0d0d0d;
+  background-color: white;
   display: grid;
   align-items: center;
   top: 0;
@@ -18,7 +20,7 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-    color: #fff;
+    color: #DE80B0;
 `;
 
 export const Icon = styled.div `
@@ -32,15 +34,18 @@ export const Icon = styled.div `
 `;
 
 export const SidebarWrapper = styled.div `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     color: #fff;
 `;
 
 export const SidebarMenu = styled.ul `
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
-    text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 25px;
 
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6, 60px);
@@ -55,12 +60,16 @@ export const SidebarLink = styled.a `
     font-size: 1.5rem;
     list-style: none;
     transition: 0.2s ease-in-out;
+    background-color: #DE80B0;
+    border-radius: 10px;
+    padding: 15px 10px;
     color: #fff;
     cursor: pointer;
 
     &:hover{
-        color: #01bf71;
-        transition: 0.2s ease-in-out;
+        background-color: #44a3d9;
+        transform: scale(1.01);
+        transition: 0.1s ease-in-out;
     }
 `;
 
@@ -70,12 +79,13 @@ export const SideBtnWrap = styled.div `
 `;
 
 export const SidebarRoute = styled.a `
-    border-radius: 50px;
-    background-color: pink;
+    display: flex;
+    border-radius: 10px;
+    background-color: #44a3d9;
     white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 1.5rem;
     outline: none;
     border: none;
     cursor: pointer;
@@ -83,8 +93,26 @@ export const SidebarRoute = styled.a `
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background-color: #fff;
-        color: #010606;
+        transition: all 0.1s ease-in-out;
+        background-color: #DE80B0;
+        transform: scale(1.01);
     }
+`;
+
+export const Logo = styled.div`
+  display: block;
+  text-align: center;
+  
+  img {
+    width: 350px;
+  
+    @media screen and (max-width: 500px) {
+      width: 200px;
+    }
+  }
+`;
+
+export const Calendar = styled(BsFillCalendar2CheckFill)`
+  width: 100%;
+  padding-right: 10px;
 `;
