@@ -47,7 +47,11 @@ export const TurmaSection = styled.div`
   gap: 100px;
 
   @media screen and (max-width: 860px) {
-    gap: 60px;
+    gap: 80px;
+
+    img {
+      width: 200%;
+    }
   }
   
   @media screen and (max-width: 460px) {
