@@ -1,11 +1,24 @@
 import React from 'react';
 
-import Header from '../../components/dashboard/header/index'
+import Aside from '../../components/dashboard/aside/index';
+
+import Header from '../../components/dashboard/header/index';
+
+import { Container, Wrapper } from './styles'
+
+import Dashboard_content from '../../components/dashboard/dashboard-content/index';
+
+
 
 const dashboard: React.FC = () => {
-
   return (
-    <Header/>
+    <Wrapper>
+      <Aside/>
+      <Container>
+        <Header/>
+        <Dashboard_content/>
+      </Container>
+    </Wrapper>
   );
 }
 

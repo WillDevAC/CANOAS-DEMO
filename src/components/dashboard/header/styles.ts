@@ -1,69 +1,30 @@
 import styled from 'styled-components';
 
-import { MdMenuBook } from 'react-icons/md';
-
-import { BsImages } from 'react-icons/bs';
-
-import { RiPencilRuler2Fill } from 'react-icons/ri';
-
 import { FaBars } from 'react-icons/fa';
+
+import { FiLogOut } from 'react-icons/fi'
 
 export const Container = styled.div`
   display: flex;
 `;
 
-export const Header = styled.div`
-  top: 0;
-  position: sticky;
-  background: white;
+export const Content = styled.div`
   display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
+`;
+
+export const Header = styled.div`
+  display: flex;
   justify-content: space-between;
+  background: white;
+  border-bottom: 3px solid #44a3d9;
+  width: 100%;
   align-items: center;
   padding: 0.5rem calc((100vw - 1900px) / 2);
   height: 100%;
   z-index: 10;
-
-  @media screen and (max-width: 985px) {
-    
-  }
-`;
-
-export const Aside = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-  background-color: #44a3d9;
-  width: 13%;
-  height: 100vh;
-
-  @media screen and (max-width: 985px) {
-   display: none;
-  }
-
-  h1, p {
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    border-bottom: 1.5px solid white;
-  }
-  h1 {
-    font-size: 1.5rem;
-    background-color: #3e94c5;
-  }
-  p {
-    display: flex;
-    font-size: 1rem;
-
-    &:hover {
-      transition: 0.1s;
-      font-size: 1.2rem;
-      background-color: #4fb4ed;
-      cursor: pointer;
-    }
-  }
 `;
 
 export const Logo = styled.div`
@@ -72,18 +33,6 @@ export const Logo = styled.div`
   img {
     width: 200px;
   }
-`;
-
-export const RulerPencil = styled(RiPencilRuler2Fill)`
-  margin-right: 10px;
-`;
-
-export const Gallery = styled(BsImages)`
-  margin-right: 10px;
-`;
-
-export const MenuBook = styled(MdMenuBook)`
-  margin-right: 10px;
 `;
 
 export const Hamburger = styled(FaBars)`
@@ -101,6 +50,11 @@ export const Hamburger = styled(FaBars)`
     cursor: pointer;
   }
 `;
+
+export const LogOut = styled(FiLogOut)`
+  margin-right: 10px;
+`;
+
 
 export const Disconnect = styled.h1`
   margin: 0 15px;
