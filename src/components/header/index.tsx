@@ -12,14 +12,14 @@ import {
   NavLogo
 } from './styles';
 
-const Navbar = () => {
+const Navbar = ( { toggle } ) => {
   return (
     <>
       <Nav id="header">
         <NavLogo href='/'>
           <img src="images/logo.webp" alt="Logo algodão doce canoas" />
         </NavLogo>
-        <Hamburger/>
+        <Hamburger onClick={toggle}/>
         <NavMenu>
           <NavLink activeStyle>
             Home
