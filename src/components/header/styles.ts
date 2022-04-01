@@ -12,7 +12,6 @@ export const Nav = styled.nav`
   position: sticky;
   border-bottom: 3px solid #DE80B0;
   background: white;
-  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,9 +60,10 @@ export const Hamburger = styled(FaBars)`
   display: none;
   color: black;
   @media screen and (max-width: 985px) {
+    color: #DE80B0;
     display: block;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
