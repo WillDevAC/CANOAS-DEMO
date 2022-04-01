@@ -8,25 +8,32 @@ import Classes from "../../components/classes";
 
 import Informations from "../../components/informations";
 
-import Galary from '../../components/galery'
+import Gallery from '../../components/gallery'
 
 import After_Hours from '../../components/after-hours'
 
-import Ativities from '../../components/ativities'
+import Activities from '../../components/activities'
 
 import LayoutFragment from "../../components/layout";
 
+
 const home: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <LayoutFragment>
         <Slider/>
         <About/>
-        <Galary/>
+        <Gallery/>
 	      <Informations/>
         <Classes/>
         <After_Hours/>
-        <Ativities/>
+        <Activities/>
       </LayoutFragment>
     </>
   );

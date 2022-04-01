@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
   background-color: #00a99d;
 `;
 
@@ -20,7 +20,7 @@ export const Baby = styled.div`
     max-width: 65%;
   }
 
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 1000px) {
     display: none;
   }
 `;
@@ -38,6 +38,14 @@ export const Title = styled.h1`
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 645px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const TurmaSection = styled.div`
@@ -47,11 +55,11 @@ export const TurmaSection = styled.div`
   gap: 100px;
 
   @media screen and (max-width: 860px) {
-    gap: 80px;
+    gap: 100px;
+  }
 
-    img {
-      width: 200%;
-    }
+  @media screen and (max-width: 600px) {
+    gap: 50px;
   }
   
   @media screen and (max-width: 460px) {
@@ -68,6 +76,7 @@ export const TurmaDiv = styled.div`
 
   img {
     max-width: 100%;
+    min-width: 200px;
   }
 `;
 

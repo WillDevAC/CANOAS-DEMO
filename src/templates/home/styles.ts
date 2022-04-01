@@ -11,7 +11,7 @@ export const Title = styled.h1<Props>`
   width: 100%;
   padding-left: ${props => props.padding_left == 'default' ? '9%' : '0'};
   font-family: 'Lobster Two', cursive;
-  font-size: 2.5rem;
+  font-size: ${props => props.font_size == '4rem' ? '4rem' : '2.5rem'};
   color: black;
   align-self: ${props => props.align_self == 'left' ? 'left' : 'center'};
   padding-bottom: 1rem;

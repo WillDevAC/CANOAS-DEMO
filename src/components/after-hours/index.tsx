@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Title } from '../../templates/home/styles';
 
-import { Container, Content } from './styles';
+import { Container, Content, Paragraph } from './styles';
 
 const after_hours: React.FC = () => {
   return (
@@ -11,8 +11,19 @@ const after_hours: React.FC = () => {
         <img src="images/bebefeliz.png" alt="Bebê feliz" />
       </Content>
       <Content bg_align="default">
-        <Title color="primary" align_self="flex-start">Turno Inverso</Title>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ducimus tenetur expedita, minima, corrupti, sint pariatur doloribus recusandae quidem ut voluptatum officiis obcaecati. Quo quisquam architecto cum fugiat, est, sit magnam ex blanditiis deleniti modi vel eligendi magni! Nemo eveniet veritatis magnam aspernatur ipsam repellendus temporibus iusto fugiat, quisquam quasi!</p>
+        <Title color="primary" font_size="4rem" align_self="flex-start">Turno Inverso</Title>
+          <Paragraph>
+            Turno Inverso é um espaço prazeroso, que propicia aprendizagens diversificadas e convivência social para estudantes do 1º ao 9º ano do Ensino Fundamental, no turno oposto às aulas.
+          </Paragraph>
+          <Paragraph>
+            TURNO MANHÃ: As crianças chegam a partir das 7h, realizam atividades diversificadas, lancham, recebem orientação na realização dos temas, estudos e pesquisas, almoçam as 11h, fazem higiene, descansam até o horário de irem para escola regular.
+          </Paragraph>          
+          <Paragraph>
+            TURNO DA TARDE: As crianças chegam a partir das 12h, almoçam, fazem a higiene e um período de descanso. À tarde fazem atividades diversificadas, lancham e recebem orientação na realização dos temas, estudos e pesquisas.
+          </Paragraph>
+          <Paragraph>
+            PÓS TURNO: As crianças chegam após o término das aulas regulares do turno da tarde, recebem um lanche e usufruem de espaços de lazer até às 19h, quando os pais vêm buscá-las.
+          </Paragraph>
       </Content>
     </Container>
   );
