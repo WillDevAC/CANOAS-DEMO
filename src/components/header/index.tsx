@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { useRouter } from 'next/router'
 
@@ -13,7 +13,11 @@ import {
   NavLogo
 } from './styles';
 
+import Modal from '../modal'
+
 const Navbar = ( { toggle } ) => {
+
+  const [openModal, setOpenModal] = useState(false);
 
   const router = useRouter()
 
@@ -29,7 +33,7 @@ const Navbar = ( { toggle } ) => {
         </NavLogo>
         <Hamburger onClick={toggle}/>
         <NavMenu>
-          <NavLink to="home" smooth={true} duration={500} offset={-50} active>
+          <NavLink to="home" smooth={true} duration={500} offset={-50}>
             Home
           </NavLink>
           <NavLink to="informations" smooth={true} offset={-80} duration={500}>
@@ -46,11 +50,12 @@ const Navbar = ( { toggle } ) => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink>
+          <NavBtnLink onClick={() => { setOpenModal(true) }}>
           <Calendar/> Agende sua visita
           </NavBtnLink>
         </NavBtn>
       </Nav>
+      { openModal && <Modal closeModal={setOpenModal} />}
     </>
   );
 };

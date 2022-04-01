@@ -4,6 +4,9 @@ import { FaTimes } from 'react-icons/fa';
 
 import { BsFillCalendar2CheckFill } from 'react-icons/bs'
 
+
+import { Link as LinkS } from 'react-scroll'
+
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
@@ -52,7 +55,7 @@ export const SidebarMenu = styled.ul `
     }
 `
 
-export const SidebarLink = styled.a `
+export const SidebarLink = styled(LinkS) `
     display: flex;
     align-items: center;
     justify-content: center;
