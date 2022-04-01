@@ -22,7 +22,7 @@ const about2: React.FC = () => {
             <img src="images/sobre.webp" alt="" />
           </Image>
           <About>
-            <Title color="primary">Sobre</Title>
+            <Title color="primary" align_self="flex-start">Sobre</Title>
             <Paragraph>
               Nossa escola possui uma equipe especializada e com constante
               treinamento com foco no desenvolvimento infantil. Atendemos turmas
