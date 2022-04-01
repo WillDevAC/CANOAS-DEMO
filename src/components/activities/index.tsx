@@ -8,23 +8,23 @@ const activities: React.FC = () => {
       <h1>ATIVIDADES EXTRAS</h1>
       <Box>
         <CardImageTop>
-          <img src="images/ativitie1.png" alt="Bebê" />
+          <img src="images/activity.png" alt="Bebê" />
           <p>Ballet</p>
         </CardImageTop>
         <CardImageTop>
-          <img src="images/ativitie2.png" alt="Bebê" />
+          <img src="images/activity2.png" alt="Bebê" />
           <p>Ginástica</p>
         </CardImageTop>
         <CardImageTop>
-          <img src="images/ativitie3.png" alt="Bebê" />
+          <img src="images/activity3.png" alt="Bebê" />
           <p>Capoeira</p>
         </CardImageTop>
         <CardImageTop>
-          <img src="images/ativitie4.png" alt="Bebê" />
+          <img src="images/activity4.png" alt="Bebê" />
           <p>Idiomas</p>
         </CardImageTop>
         <CardImageTop>
-          <img src="images/ativitie5.png" alt="Bebê" />
+          <img src="images/activity5.png" alt="Bebê" />
           <p>Informática</p>
         </CardImageTop>
       </Box>

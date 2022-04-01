@@ -11,28 +11,28 @@ const Gallery: React.FC = () => {
     <Container>
       <Slider {...settings}>
         <SectionImg>
-          <img src="images/galery1.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="images/galery2.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery2.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="images/galery3.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery3.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="images/galery4.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery4.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="images/galery5.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery5.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="images/galery6.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery6.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="images/galery7.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery7.png" alt="Imagem escola algodão doce" />
         </SectionImg>
         <SectionImg>
-          <img src="images/galery8.png" alt="Imagem escola algodão doce" />
+          <img src="images/gallery8.png" alt="Imagem escola algodão doce" />
         </SectionImg>
       </Slider>
     </Container>
