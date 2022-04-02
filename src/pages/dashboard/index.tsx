@@ -4,7 +4,7 @@ import Aside from '../../components/dashboard/aside/index';
 
 import Header from '../../components/dashboard/header/index';
 
-import { Container, Wrapper } from './styles'
+import { Container, Wrapper } from '../../templates/dashboard/styles'
 
 import Dashboard_content from '../../components/dashboard/dashboard-content/index';
 
