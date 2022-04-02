@@ -56,7 +56,7 @@ export const LogOut = styled(FiLogOut)`
 `;
 
 
-export const Disconnect = styled.h1`
+export const Disconnect = styled.a`
   margin: 0 15px;
   color: #44a3d9;
   text-decoration: none;
@@ -66,6 +66,7 @@ export const Disconnect = styled.h1`
     color: #DE80B0;
     transition: 0.1s ease-in-out;
     transform: scale(1.02);
+    cursor: pointer;
   }
 
   @media screen and (max-width: 985px) {

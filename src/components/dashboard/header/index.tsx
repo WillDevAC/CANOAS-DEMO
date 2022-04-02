@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'; //Contexto Router controle de todas as rotas
 import React from 'react';
 
 import { 
@@ -10,6 +11,12 @@ import {
 } from './styles';
 
 const header: React.FC = () => {
+  const router = useRouter()  // atribuindo useRouter a uma constante (todas as funções)
+                              // Chamando o contexto
+  const handleRedirect = () => {
+    router.push("/")
+  }
+
   return (
     <Container>
       <Header>
@@ -17,7 +24,7 @@ const header: React.FC = () => {
           <img src="images/logo.webp" alt="" />
         </Logo>
         <Hamburger/>
-        <Disconnect>
+        <Disconnect onClick={() => handleRedirect()}>
           <LogOut/>
         </Disconnect>
       </Header>

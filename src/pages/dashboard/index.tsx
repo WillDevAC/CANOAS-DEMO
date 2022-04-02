@@ -6,7 +6,7 @@ import Header from '../../components/dashboard/header/index';
 
 import { Container, Wrapper } from '../../templates/dashboard/styles'
 
-import Dashboard_content from '../../components/dashboard/dashboard-content/index';
+import Dash_content from '../../components/dashboard/dash-content/index';
 
 
 
@@ -16,7 +16,7 @@ const dashboard: React.FC = () => {
       <Aside/>
       <Container>
         <Header/>
-        <Dashboard_content/>
+        <Dash_content/>
       </Container>
     </Wrapper>
   );
