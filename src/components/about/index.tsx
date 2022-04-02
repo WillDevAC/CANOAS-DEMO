@@ -39,15 +39,17 @@ const about = () => {
               contribuindo para a expensão das suas capacidades de comunicação, autonomia, interação social, domínio do espaço
               físico e do próprio corpo, pensamento, ética e estética.
             </Paragraph>
-            <ButtonContainer onClick={() => { setOpenModal(true) }}>
-              <BtnPink>
-                Saiba mais sobre nossa história
+            <ButtonContainer>
+              <BtnPink onClick={() => { setOpenModal(true) }}>
+                <Calendar/>Agende sua visita
               </BtnPink>
+              <BtnBlue>Nossa história</BtnBlue>
             </ButtonContainer>
           </Text>
         </Grid>
       </About>
     </section>
+    { openModal && <Modal closeModal={setOpenModal} />}
     </>
   );
 }
