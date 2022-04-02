@@ -2,13 +2,14 @@ import React, {useState, useEffect} from 'react';
 
 import ClockLoader from "react-spinners/ClockLoader";
 
-import { css } from "@emotion/react"
+import { ContainerFlex } from  "../templates/home/styles";
+
+import { css } from "@emotion/react";
 
 import Default from './home';
 
 const override = css`
-  display: block;
-  margin: 23% auto;
+  
 `; 
 
 const Home: React.FC = () => {
@@ -27,9 +28,10 @@ const Home: React.FC = () => {
     <>
       {
         loading ?
-
-        <ClockLoader color={color} loading={loading} css={override} size={70} />
-
+        <ContainerFlex>
+          <ClockLoader color={color} loading={loading} css={override} size={70} />
+        </ContainerFlex>
+        
         :
         <Default/>
       }

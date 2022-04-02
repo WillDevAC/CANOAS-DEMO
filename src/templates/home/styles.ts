@@ -6,6 +6,14 @@ interface Props { //Definição da prop
   padding_left: string;
 }
 
+export const ContainerFlex = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Title = styled.h1<Props>`
   display: flex;
   width: 100%;
