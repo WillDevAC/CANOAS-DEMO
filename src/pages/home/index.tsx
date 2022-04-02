@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import VLibras from '@djpfs/react-vlibras';
+
 import Slider from '../../components/slider'
 
 import About from '../../components/about'
@@ -27,6 +29,7 @@ const home: React.FC = () => {
         <title>Algodão Doce Canoas | Página Principal</title>
         <link rel="shortcut icon" href="icons/logo.ico"/>    
       </Head>
+      <VLibras/>
       <LayoutFragment>
         <Slider/>
         <About/>

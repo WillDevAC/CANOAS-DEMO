@@ -84,7 +84,6 @@ export const BtnPink = styled.a`
 
 export const BtnBlue = styled(BtnPink)`
   background-color: #44a3d9;
-  margin-left: 10px;
   cursor: pointer;
 
   &:hover {
