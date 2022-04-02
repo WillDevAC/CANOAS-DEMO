@@ -11,13 +11,10 @@ const slider: React.FC = () => {
     <div id="home" className="home">
       <Slider {...settings}>
         <SliderItem>
-          <img src="images/slider1.png" alt="" />
+          <img src="images/mainslider1.webp" alt="" />
         </SliderItem>
         <SliderItem>
-          <img src="images/slider1.png" alt="" />
-        </SliderItem>
-        <SliderItem>
-          <img src="images/slider1.png" alt="" />
+          <img src="images/mainslider2.webp" alt="" />
         </SliderItem>
       </Slider>
     </div>

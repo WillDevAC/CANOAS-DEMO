@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 25%;
+  width: 80%;
   min-height: 200px;
   padding: 20px;
   border-radius: 20px;
@@ -12,6 +18,7 @@ export const Card = styled.div`
 
   h1 {
     color: #44a3d9;
+    font-size: 1.5rem;
     padding-bottom: 1%;
   }
 

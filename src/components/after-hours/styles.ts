@@ -36,6 +36,10 @@ export const Paragraph =  styled.p`
   }
 `;
 
+export const Pink = styled.span`
+  color: #de80b0;
+`;
+
 export const Content = styled.div<Props>`
   display: flex;
   flex-direction: column;

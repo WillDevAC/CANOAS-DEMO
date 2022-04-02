@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import { Calendar } from '../header/styles';
+
+import { Title } from '../../templates/home/styles';
 
 import {
    Grid,
@@ -11,8 +15,12 @@ import {
    BtnBlue
   } from './styles';
 
-  import { Title } from '../../templates/home/styles';
+import Modal from '../modal'
+
 const about = () => {
+
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <>
     <section id='about' className='about'>
@@ -32,13 +40,16 @@ const about = () => {
               físico e do próprio corpo, pensamento, ética e estética.
             </Paragraph>
             <ButtonContainer>
-              <BtnPink>Agende sua visita</BtnPink>
+              <BtnPink onClick={() => { setOpenModal(true) }}>
+                <Calendar/>Agende sua visita
+              </BtnPink>
               <BtnBlue>Nossa história</BtnBlue>
             </ButtonContainer>
           </Text>
         </Grid>
       </About>
     </section>
+    { openModal && <Modal closeModal={setOpenModal} />}
     </>
   );
 }

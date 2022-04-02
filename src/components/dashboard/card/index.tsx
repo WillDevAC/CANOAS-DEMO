@@ -18,7 +18,7 @@ const card: React.FC <Props> = ({Title, Date, Link}) => {
         <h1>{Title}</h1>
       </div>
       <p>Postado em : {Date}</p>
-        <BtnPink href={Link}>Visualizar</BtnPink>
+        <BtnPink href={Link} target="_blank">Visualizar</BtnPink>
     </Card>
   );
 }
