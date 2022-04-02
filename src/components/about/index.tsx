@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import { Calendar } from '../header/styles';
-
 import { Title } from '../../templates/home/styles';
 
 import {
@@ -11,15 +9,10 @@ import {
    About,
    Image,
    ButtonContainer,
-   BtnPink,
    BtnBlue
   } from './styles';
 
-import Modal from '../modal'
-
 const about = () => {
-
-  const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
@@ -40,16 +33,12 @@ const about = () => {
               físico e do próprio corpo, pensamento, ética e estética.
             </Paragraph>
             <ButtonContainer>
-              <BtnPink onClick={() => { setOpenModal(true) }}>
-                <Calendar/>Agende sua visita
-              </BtnPink>
-              <BtnBlue>Nossa história</BtnBlue>
+              <BtnBlue>Veja nossa história</BtnBlue>
             </ButtonContainer>
           </Text>
         </Grid>
       </About>
     </section>
-    { openModal && <Modal closeModal={setOpenModal} />}
     </>
   );
 }
