@@ -24,6 +24,7 @@ const home: React.FC = () => {
   return (
     <>
       <Head>
+        <title>Algodão Doce Canoas | Página Principal</title>
         <link rel="shortcut icon" href="icons/logo.ico"/>    
       </Head>
       <LayoutFragment>

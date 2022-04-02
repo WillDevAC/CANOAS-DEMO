@@ -10,6 +10,7 @@ const dashboard: React.FC = () => {
   return (
     <>
       <Head>
+        <title>Algodão Doce Canoas | Dashboard</title>
         <link rel="shortcut icon" href="icons/logo.ico"/>    
       </Head>
       <LayoutDashboard>
