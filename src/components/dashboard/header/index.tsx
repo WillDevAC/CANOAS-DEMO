@@ -21,7 +21,7 @@ const header = ({ toggle }) => {
     <Container>
       <Header>
         <Logo>
-          <img src="images/logo.webp" alt="" />
+          <img src="/images/logo.webp" alt="" />
         </Logo>
         <Hamburger onClick={toggle}/>
         <Disconnect onClick={() => handleRedirect()}>
