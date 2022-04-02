@@ -24,7 +24,6 @@ export const Aside = styled.div`
     width: 100%;
     text-align: center;
     color: white;
-    border-bottom: 1.5px solid white;
   }
   h1 {
     font-size: 1.5rem;
@@ -40,6 +39,16 @@ export const Aside = styled.div`
       background-color: #4fb4ed;
       cursor: pointer;
     }
+  }
+`;
+
+export const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  section {  
+    border-bottom: 1.5px solid white;
   }
 `;
 

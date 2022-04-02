@@ -6,7 +6,8 @@ import {
   Aside,
   MenuBook,
   RulerPencil,
-  Gallery
+  Gallery,
+  SectionContainer
  } from './styles';
  
 
@@ -17,15 +18,17 @@ const aside: React.FC = () => {
   return (
     <Aside>
       <h1>Seções</h1>
-      <section onClick={() => router.push('/dashboard')}>
-        <p><MenuBook/>Cardápios</p>
-      </section>
-      <section onClick={() => router.push('/dashboard/extras')}>
-        <p><RulerPencil/>Extras</p>  
-      </section>
-      <section onClick={() => router.push('/dashboard/album')}>
-        <p><Gallery/>Galeria</p>
-      </section>
+      <SectionContainer>
+        <section onClick={() => router.push('/dashboard')}>
+          <p><MenuBook/>Cardápios</p>
+        </section>
+        <section onClick={() => router.push('/dashboard/extras')}>
+          <p><RulerPencil/>Extras</p>  
+        </section>
+        <section onClick={() => router.push('/dashboard/album')}>
+          <p><Gallery/>Galeria</p>
+        </section>
+      </SectionContainer>
     </Aside>
   );
 }

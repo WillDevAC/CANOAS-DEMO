@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { useRouter } from 'next/router';
+
+import { LogOut } from '../header/styles'; 
+
 import { 
   SidebarContainer, 
   Icon, 
@@ -10,10 +14,13 @@ import {
   SideBtnWrap, 
   SidebarRoute,
   Logo,
-  Calendar
 } from './styles';
 
+
+
 const sidebar = ( { isOpen, toggle } ) => {
+  const router = useRouter();
+  
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle} >
@@ -24,15 +31,13 @@ const sidebar = ( { isOpen, toggle } ) => {
           <Logo>
             <img src="images/logo.webp" alt="" />
           </Logo>
-          <SidebarLink>Página principal</SidebarLink>
-          <SidebarLink>Para o seu filho</SidebarLink>
-          <SidebarLink>Sobre nós</SidebarLink>
-          <SidebarLink>Turmas</SidebarLink>
-          <SidebarLink>Contatos</SidebarLink>
-          <SidebarLink>Área dos pais</SidebarLink>
+          <SidebarLink onClick={() => router.push('/dashboard')}>Cardápios</SidebarLink>
+          <SidebarLink onClick={() => router.push('/dashboard/extras')}>Extras</SidebarLink>
+          <SidebarLink onClick={() => router.push('/dashboard/album')}>Galeria</SidebarLink>
+          <SidebarLink>Voltar</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute><Calendar/>Agendar visita</SidebarRoute>
+          <SidebarRoute><LogOut/>Sair</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>      
