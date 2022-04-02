@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Container, Wrapper } from './styles'; 
+import { Container, Wrapper, InfoContainer } from './styles'; 
 
 import Aside from '../aside';
 
@@ -24,7 +24,10 @@ const layout: React.FC = ( { children } ) => {
         <Aside />
         <Container>
           <Header toggle={toggle}/>
-          { children }
+          
+          <InfoContainer>
+            { children }
+          </InfoContainer>
         </Container>
       </Wrapper>
     </>

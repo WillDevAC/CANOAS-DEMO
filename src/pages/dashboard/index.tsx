@@ -1,13 +1,16 @@
 import React from 'react';
 
-import Dash_content from '../../components/dashboard/dash-content/index';
 
 import LayoutDashboard from '../../components/dashboard/layout'
+
+import Card from '../../components/dashboard/card'
 
 const dashboard: React.FC = () => {
   return (
     <LayoutDashboard>
-      <Dash_content />
+      <Card Title="Title1" Date="15/12/2003" Link="https://www.google.com"/>
+      <Card Title="Title1" Date="15/12/2003" Link="https://www.google.com"/>
+      <Card Title="Title1" Date="15/12/2003" Link="https://www.google.com"/>
     </LayoutDashboard>
   );
 }
