@@ -1,15 +1,22 @@
 import React from 'react';
 
+import Head from "next/head";
+
 import LayoutDashboard from '../../components/dashboard/layout'
 
 import Card from '../../components/dashboard/card'
 
 const dashboard: React.FC = () => {
   return (
-    <LayoutDashboard>
-      <Card Title="Cardápio Berçário" Date="03/03/2022" Link="menus/cardapio.xlsx"/>
-      <Card Title="Cardápio Março" Date="03/03/2022" Link="menus/cardapiobercario.xlsx"/>
-    </LayoutDashboard>
+    <>
+      <Head>
+        <link rel="shortcut icon" href="icons/logo.ico"/>    
+      </Head>
+      <LayoutDashboard>
+        <Card Title="Cardápio Berçário" Date="03/03/2022" Link="menus/cardapio.xlsx"/>
+        <Card Title="Cardápio Março" Date="03/03/2022" Link="menus/cardapiobercario.xlsx"/>
+      </LayoutDashboard>
+    </>
   );
 }
 

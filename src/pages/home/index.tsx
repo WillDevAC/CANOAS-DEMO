@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import Head from "next/head";
 
 import Slider from '../../components/slider'
 
@@ -23,6 +23,9 @@ const home: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="icons/logo.ico"/>    
+      </Head>
       <LayoutFragment>
         <Slider/>
         <About/>
