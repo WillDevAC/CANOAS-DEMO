@@ -10,7 +10,7 @@ import {
   LogOut
 } from './styles';
 
-const header: React.FC = () => {
+const header = ({ toggle }) => {
   const router = useRouter()  // atribuindo useRouter a uma constante (todas as funções)
                               // Chamando o contexto
   const handleRedirect = () => {
@@ -23,7 +23,7 @@ const header: React.FC = () => {
         <Logo>
           <img src="images/logo.webp" alt="" />
         </Logo>
-        <Hamburger/>
+        <Hamburger onClick={toggle}/>
         <Disconnect onClick={() => handleRedirect()}>
           <LogOut/>
         </Disconnect>
